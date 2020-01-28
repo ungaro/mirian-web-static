@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Mirian / Your Financial Network',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Access financial services with your friends. Join their Social Wallets and invest together!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,6 +21,14 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Muli', 'Nunito']
+        }
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',

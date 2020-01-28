@@ -1,79 +1,79 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/logo.svg'
+import logo from '../img/mirian_logo.png'
+
 import facebook from '../img/social/facebook.svg'
+import telegram from '../img/social/icon_telegram_white.svg'
+import medium from '../img/social/icon_medium_white.svg'
 import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
+import twitter from '../img/social/icon_twitter_white.svg'
 import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
+
+      <footer className="footer has-background-black has-text-white-ter" style={{backgroundImage: 'linear-gradient(-122deg, rgb(0, 67, 132) 0%, rgb(6, 116, 210) 100%)'}}>
+        <div className="container">
+        <div className="content">
           <img
             src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
+            alt="Mirian"
+            style={{ width: '14em', }}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-white-ter">
+          <div className="container  has-text-white-ter">
             <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+              <div className="column" style={{fontSize: '0.8rem'}}>
+              <p >We are Blockchain Born. We are experienced financial technologists who are building the tools you need to monitor and take control of your finances.</p>
+
+              <p>We believe managing your money and assets should be easy, bankless, borderless, and free. Join the Mirian revolution and reclaim your financial freedom!</p>
+
               </div>
               <div className="column is-4 social">
+              <a href="https://apps.apple.com/app/id1482613387" target="_blank"><img src="https://dwr2vwfm4xarg.cloudfront.net/wp-content/uploads/2018/03/12233348/download_ios.png" width="160" /></a>
+</div>
+              <div className="column is-4 social">
+  
+                <a title="twitter" href="https://twitter.com/Mirian_tech">
+                  <img
+                    className="fas fa-lg"
+                    src={twitter}
+                    alt="Twitter"
+                    style={{ width: '2em' }}
+                  />
+                </a>
+                <a title="telegram" href="https://t.me/miriantech">
+                  <img
+                    src={telegram}
+                    alt="Telegram"
+                    style={{ width: '2em' }}
+                  />
+                </a>
+                <a title="medium" href="https://medium.com/mirian-tech">
+                  <img
+                    src={medium}
+                    alt="Medium"
+                    style={{ width: '2em' }}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          </div></div>
+      </footer>
+    )
+  }
+}
+
+export default Footer
+
+
+/**
+ * 
+ *               <!--
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -81,35 +81,5 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    )
-  }
-}
-
-export default Footer
+                -->
+ */
